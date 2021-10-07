@@ -48,5 +48,15 @@ footer {
 }
 
 .aside {
-  background-color: rgb(180, 180, 255);
+  background-color: rgb(210, 210, 245);
+  display: grid;
+  margin-right: 20px;
+}
+
+.activeTab {
+  color: red;
+}
+
+.sideBar {
+  display: flex;
 }
