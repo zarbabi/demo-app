@@ -11,12 +11,14 @@ const BlogPage = () => {
       {items.map((item) => {
         return (
           <li key={item.to}>
-            <Link to={item.to}>{item.name}</Link>
+            <Link to={{ pathname: item.to, search: "sort=name" }}>
+              {item.name}
+            </Link>
           </li>
         );
       })}
     </div>
   );
-}; 
+};
 
 export default BlogPage;
