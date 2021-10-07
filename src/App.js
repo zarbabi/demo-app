@@ -1,16 +1,17 @@
 import "./App.css";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import AboutUs from "./Pages/AboutUsPage";
-import Navigation from "./components/Navigation";
+import Layout from "./Layout/Layout";
+import Profile from "./Pages/Profile";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navigation />
+    <Layout>
       <Route path="/" exact={true} component={HomePage} />
       <Route path="/about-us" component={AboutUs} />
-    </BrowserRouter>
+      <Route path="/profile" component={Profile} />
+    </Layout>
   );
 }
 

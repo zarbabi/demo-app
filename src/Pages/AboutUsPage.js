@@ -1,9 +1,5 @@
 function AboutUs(props) {
-  return (
-    <>
-      <p> About us page</p>
-    </>
-  );
+  return <p> About us page</p>;
 }
 
 export default AboutUs;
